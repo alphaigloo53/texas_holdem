@@ -6,6 +6,10 @@
 </head> 
 
 <body> 
+
+<main> 
+
+    <!--The title appears at the top of my page using the header feature and is followed by a brief intro to Texas Hold'em-->
    <header>
      <h1>Texas Hold'em Poker</h1>
      <p>Texas Hold'em is the most commonly played version of poker in the world. It's the 
@@ -15,12 +19,16 @@
      </p>
    </header>
    
-   <img
-     src = "/Users/alphaigloo53/Desktop/Rize/texas_holdem/img/poker_world.jpg"
-     alt = "Poker World Series"
-     width = "10%"
-   >
-   
+   <!--Here is the first picture incorperated into my project using the img function-->
+   <section>
+    <img
+      src = "/Users/alphaigloo53/Desktop/Rize/texas_holdem/img/poker_world.jpeg"
+      alt = "Poker World Series"
+      width = "15%"
+    >
+   </section>
+  
+   <!--Here I use a section tag to structure my code into the general rules where the user can learn basic poker syntax-->
    <section>
      <h2>Rules</h2>
      <p>Again, the goal is to create the best 5 card hand using your two cards and the river of five cards.</p>
@@ -33,6 +41,9 @@
 
      <h4>Betting Rounds</h4>
      <p>There are four betting rounds.</p>
+     
+     <!--Here I am using an ordered list to show the user some more attributes of poker. Below I also use an unordered list
+     to do the same thing-->
      <ol>
         <li>Pre-Flop: After cards are dealt</li>
         <li>Flop: First three cards are revealed</li>
@@ -50,11 +61,19 @@
         <li>Raise: Increase the bet</li>
         <li>Fold: Give up the hand</li>
     </ul>
+    <p>You must do one of these actions each turn. Each choice comes with different playstyles and strategies, but the idea of this page
+        is just to get the basics down and learn how the flow of the game works.
+    </p>
    </section>
 
-   <footer>
+   <!--This function is ending my main section of the page-->
+</main>
+   
+<!--The footer is refering the user to the next page via a built in link using the href function-->
+<footer>
     <p>Next, you must learn the hands of poker!</p>
     <p>Click <a href = "page2.html">here</a> to see the different hands you could use.</p>
-   </footer>
+</footer>
+
 </body> 
 </html>
