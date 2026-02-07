@@ -1,0 +1,72 @@
+header {
+    text-align: center;
+}
+
+body { 
+    background-color: lightpink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.subheader {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image {
+    width: 50%;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.box {
+    background-color: ligtgray;
+    padding: 20px;
+    margin: 10px;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+#page-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#middle-section {
+    text-align: center;
+}
+
+#body-page2{
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
