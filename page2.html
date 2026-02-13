@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<html>
-
-<head> 
-    <title>Poker Hands</title> 
+<html lang = "en">
+  <head>
+    <title>Poker Hands</title>
 
     <!--Link to my stylesheet-->
-    <link rel = "stylesheet" href = "css/style.css"/>
-</head> 
+    <link rel = "stylesheet" href = "css/style.css" />
+  </head>
 
-<!--This header has the same intended functionality as the previous page, highlighting the point of the webpage with a description-->
-<body id = "body-page2"> 
-   <header>
-    <h1 class = "header"> Poker Hands</h1>
-    <p>Welcome to the page all about the different hands you can play in poker!</p>
-    <p>First, lets rank all of the hands in terms of rarity.</p>
-   </header>
-   
-<!--I got the hang of using the html tags better on this page, so it is a little neater in my opinion. Especially how I
+  <!--This header has the same intended functionality as the previous page, highlighting the point of the webpage with a description-->
+  <body id = "body-page2">
+    <header>
+      <h1 class = "header">Poker Hands</h1>
+      <p>Welcome to the page all about the different hands you can play in poker!</p>
+      <p>First, lets rank all of the hands in terms of rarity.</p>
+    </header>
+
+    <!--I got the hang of using the html tags better on this page, so it is a little neater in my opinion. Especially how I
 structured the main section-->
-   <main>
-    <section>
-     <h1 class = "subheader">Hands</h1>
-     <ol>
-        <li>Royal Flush</li>
-        <li>Straight Flush</li>
-        <li>Four of a Kind</li>
-        <li>Full House</li>
-        <li>Flush</li>
-        <li>Straight</li>
-        <li>Three of a Kind</li>
-        <li>Two Pair</li>
-        <li>One Pair</li>
-        <li>High Card</li>
-      </ol>
-     </section>
+    <main>
+      <section class = "flex-container">
+        <div class = "box">
+        <h2 class = "subheader">Hands</h2>
+        <ol>
+          <li>Royal Flush</li>
+          <li>Straight Flush</li>
+          <li>Four of a Kind</li>
+          <li>Full House</li>
+          <li>Flush</li>
+          <li>Straight</li>
+          <li>Three of a Kind</li>
+          <li>Two Pair</li>
+          <li>One Pair</li>
+          <li>High Card</li>
+        </ol>
+       </div>
+      </section>
     </main>
-    
-<!--This time I use a section header to organize the code clearly, obvisouly there is an img as well so that function is nice-->
+
+    <!--This time I use a section header to organize the code clearly, obvisouly there is an img as well so that function is nice-->
+    <div class = "box">
     <section>
-     <p class = "center">Refer to this picture for a visual reference for your first poker game!</p>
-     <img
-     src = "img/poker_hands.jpg"
-     alt = "A visual summary of possible hands played in poker, ranked in order from strongest (1) to weakest (10)"
-     width = "25%"
-     class = "image"
-      >
+      <p class = "center">Refer to this picture for a visual reference for your first poker game!</p>
+      <img
+        src = "img/poker_hands.jpg"
+        alt = "A visual summary of possible hands played in poker"
+        width = "25%"
+        class = "image"
+      />
+     </div>
     </section>
 
-    <section>
-     <p class = "center">Here are some fun facts about the hands you can get along with the corresponding probabilities!</p>
-     <p class = "subheader">Hand Odds:</p>
-     <ol>
+    <section class = "flex-container">
+     <div class = "box">
+        <p class = "center">Here are some fun facts about the hands you can get along with the corresponding probabilities!</p>
+      <h3 class = "subheader">Hand Odds:</h3>
+      <ol>
         <li>Royal Flush: 0.00015%</li>
         <li>Straight Flush: 0.0014%</li>
         <li>Four of a Kind: 0.024%</li>
@@ -59,26 +62,31 @@ structured the main section-->
         <li>Flush: 0.197%</li>
         <li>Straight: 0.392%</li>
         <li>Pair: ~43%</li>
-     </ol>
-     <p>These probabilities are why betting and bluffing are huge in the game, and its a lot 
-        more about strategy than most people think</p>
+      </ol>
+      <p>
+        These probabilities are why betting and bluffing are huge in the game, and its a lot
+        more about strategy than most people think
+      </p>
+     </div>
     </section>
 
-    <section>
-        <h4 class = subheader>Poker Vocab</h4>
-        <p>Content:</p>
-        <ol>
-            <li>Blinds: Forced bet to start the action</li>
-            <li>Button: Marks the dealer (switches every hand)</li>
-            <li>Pot: Chips being played for</li>
-            <li>All in: Betting all your chips</li>
-            <li>Showdown: When players reveal hands</li>
-        </ol>
-<!--Finally, I use another footer tag to guide the user back to the home page-->
+    <section class = "box">
+      <h4 class = "subheader">Poker Vocab</h4>
+      <p>Content:</p>
+      <ol>
+        <li>Blinds: Forced bet to start the action</li>
+        <li>Button: Marks the dealer (switches every hand)</li>
+        <li>Pot: Chips being played for</li>
+        <li>All in: Betting all your chips</li>
+        <li>Showdown: When players reveal hands</li>
+      </ol>
+      <!--Finally, I use another footer tag to guide the user back to the home page-->
     </section>
-    <footer> 
-     <p>Click <a class = "button" id = "page-footer" href = "index.html">here</a> to go back to the general rules page.</p>
+
+    <footer>
+      <p>
+        Click <a class= "button" id = "page-footer" href =" index.html">here</a> to go back to the general rules page.
+      </p>
     </footer>
-  
-</body> 
+  </body>
 </html>

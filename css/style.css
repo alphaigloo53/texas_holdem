@@ -30,6 +30,10 @@ body {
 
 .flex-container {
     display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -64,7 +68,8 @@ body {
     text-align: center;
 }
 
-#body-page2{
+#body-page2 {
+    margin: 0;
     background-color: lightblue;
     font-family: Arial, sans-serif;
     margin: 0;
