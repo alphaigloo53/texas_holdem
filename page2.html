@@ -3,6 +3,11 @@
 <html lang = "en">
   <head>
     <title>Poker Hands</title>
+ 
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
 
     <!--Link to my stylesheet-->
     <link rel = "stylesheet" href = "css/style.css" />
@@ -10,19 +15,20 @@
 
   <!--This header has the same intended functionality as the previous page, highlighting the point of the webpage with a description-->
   <body id = "body-page2">
-    <header>
-      <h1 class = "header">Poker Hands</h1>
-      <p>Welcome to the page all about the different hands you can play in poker!</p>
-      <p>First, lets rank all of the hands in terms of rarity.</p>
+    <div class = "container mt-4">
+    <header class = "text-center mb-4">
+      <h1 class = "header display-5 fw-bold">Poker Hands</h1>
+      <p class = "lead mb-1">Welcome to the page all about the different hands you can play in poker!</p>
+      <p class = "text">First, lets rank all of the hands in terms of rarity.</p>
     </header>
 
     <!--I got the hang of using the html tags better on this page, so it is a little neater in my opinion. Especially how I
 structured the main section-->
     <main>
-      <section class = "flex-container">
-        <div class = "box">
-        <h2 class = "subheader">Hands</h2>
-        <ol>
+      <section class = "flex-container d-flex justify-content-center">
+        <div class = "box card shadow-sm p-3">
+        <h2 class = "subheader h4 mb-2">Hands</h2>
+        <ol class = "mb-0">
           <li>Royal Flush</li>
           <li>Straight Flush</li>
           <li>Four of a Kind</li>
@@ -39,24 +45,24 @@ structured the main section-->
     </main>
 
     <!--This time I use a section header to organize the code clearly, obvisouly there is an img as well so that function is nice-->
-    <div class = "box">
-    <section>
-      <p class = "center">Refer to this picture for a visual reference for your first poker game!</p>
+    <div class = "box card shadow-sm p-3 my-4">
+    <section class = "text-center">
+      <p class = "center mb-3">Refer to this picture for a visual reference for your first poker game!</p>
       <img
         src = "img/poker_hands.jpg"
         alt = "A visual summary of possible hands played in poker"
         width = "25%"
-        class = "image"
+        class = "image img-fluid rounded"
       />
      </div>
     </section>
     <!--Here i added some additional flex features and have them linked to my css page where the media query properly handles
     formatting if the user accesses the website via a phone or alternative device-->
-    <section class = "flex-container">
-     <div class = "box">
-        <p class = "center">Here are some fun facts about the hands you can get along with the corresponding probabilities!</p>
-      <h3 class = "subheader">Hand Odds:</h3>
-      <ol>
+    <section class = "flex-container d-flex justify-content-center">
+     <div class = "box card shadow-sm p-3 mb-4">
+        <p class = "center mb-2">Here are some fun facts about the hands you can get along with the corresponding probabilities!</p>
+      <h3 class = "subheader h5 mb-2">Hand Odds:</h3>
+      <ol class = "mb-2">
         <li>Royal Flush: 0.00015%</li>
         <li>Straight Flush: 0.0014%</li>
         <li>Four of a Kind: 0.024%</li>
@@ -65,17 +71,17 @@ structured the main section-->
         <li>Straight: 0.392%</li>
         <li>Pair: ~43%</li>
       </ol>
-      <p>
+      <p class = "mb-0">
         These probabilities are why betting and bluffing are huge in the game, and its a lot
         more about strategy than most people think
       </p>
      </div>
     </section>
     <!--I made sure to tighten up the code bu sequentially organizing my headers (h4) a couple lines below-->
-    <section class = "box">
-      <h4 class = "subheader">Poker Vocab</h4>
-      <p>Content:</p>
-      <ol>
+    <section class = "box card shadow-sm p-3">
+      <h4 class = "subheader h5 mb-2">Poker Vocab</h4>
+      <p class = "mb-2">Content:</p>
+      <ol class = "mb-0">
         <li>Blinds: Forced bet to start the action</li>
         <li>Button: Marks the dealer (switches every hand)</li>
         <li>Pot: Chips being played for</li>
@@ -85,10 +91,11 @@ structured the main section-->
       <!--Finally, I use another footer tag to guide the user back to the home page-->
     </section>
 
-    <footer>
-      <p>
-        Click <a class= "button" id = "page-footer" href = "index.html">here</a> to go back to the general rules page.
+    <footer class = "mt-4">
+      <p class = "mb-0">
+        Click <a class= "button btn btn-primary btn-sm" id = "page-footer" href = "index.html">here</a> to go back to the general rules page.
       </p>
     </footer>
+    </div>
   </body>
 </html>

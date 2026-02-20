@@ -6,19 +6,25 @@
   <head> 
     <title> Poker Prog</title> 
 
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
     <!--Link to my stylesheet-->
     <link rel = "stylesheet" href = "css/style.css"/>
   </head> 
  <!--I also formatted my code in a cleaner manner, before it was spaced out weird and not visually appealing for me to work with-->
   <body class = "body"> 
+    <div class = "container mt-4">
 
     <main> 
 
       <!--The title appears at the top of my page using the header feature and is followed by a brief intro to Texas Hold'em-->
-      <header>
+      <header class = "text-center mb-4">
         <!--Adding my first class, "header" from my stylesheet into an html sheet-->
-        <h1 class = "header"> Texas Hold'em Poker</h1>
-        <p class = "text">Texas Hold'em is the most commonly played version of poker in the world. It's the 
+        <h1 class = "header display-5 fw-bold"> Texas Hold'em Poker</h1>
+        <p class = "lead">Texas Hold'em is the most commonly played version of poker in the world. It's the 
           main game played in major poker tournaments, or amongst friends to win a little extra cash.
           Each player is dealt two cards, and the goal is to build the best possible hand with
           five cards that are played in the river (all players are allowed to use these five cards to build their hand).
@@ -26,8 +32,9 @@
       </header>
 
       <!--Here is the first picture incorperated into my project using the img function-->
+      
       <section>
-        <div class = "flex-container">
+        <div class = "row">
           <img
             src = "img/poker_world.png"
             alt = "Professional poker players participating in a world tounament"
@@ -38,12 +45,13 @@
       </section>
 
       <!--Here I use a section tag to structure my code into the general rules where the user can learn basic poker syntax-->
+      <div class = "row">
       <section>
       <!--I tried to format my code here since is looked very messy, I also added more flex features-->
-        <section class = "flex-container">
+        <section class = "flex-container row g-3">
 
-          <div class = "box">
-            <h2 class = "subheader"> Poker Rules</h2>
+          <div class = "col-md-6 mb-4">
+            <h2 class = "subheader h4 mb-2"> Poker Rules</h2>
             <p class = "text">Again, the goal is to create the best 5 card hand using your two cards and the river of five cards.</p>
 
             <ul class = "text">
@@ -52,14 +60,15 @@
               <li>You may use any five cards to make a hand</li>
             </ul>
           </div>
+          
 
-          <div class = "box">
-            <h3 class = "subheader">Betting Rounds</h3>
-            <p>There are four betting rounds.</p>
+          <div class = "col-md-6 mb-4">
+            <h3 class = "subheader h4 mb-2">Betting Rounds</h3>
+            <p class = "text">There are four betting rounds.</p>
 
             <!--Here I am using an ordered list to show the user some more attributes of poker. Below I also use an unordered list
             to do the same ting-->
-            <ol>
+            <ol class = "text">
               <li>Pre-Flop: After cards are dealt</li>
               <li>Flop: First three cards are revealed</li>
               <li>Turn: Fourth community card is revealed</li>
@@ -67,10 +76,10 @@
             </ol>
           </div>
 
-          <div class = "box">
-            <h4 class = "subheader">Betting Actions</h4>
-            <p>Each round, players have optins on what they can do based on their strategy and cards.</p>
-            <p>Players may:</p>
+          <div class = "col-md-6 mb-4">
+            <h4 class = "subheader h4 mb-2">Betting Actions</h4>
+            <p class = "text">Each round, players have optins on what they can do based on their strategy and cards.</p>
+            <p class = "text">Players may:</p>
 
             <ul class = "text">
               <li>Check: Pass the action</li>
@@ -79,10 +88,11 @@
               <li>Raise: Increase the bet</li>
               <li>Fold: Give up the hand</li>
             </ul>
+      </div>
 
-            <p>You must do one of these actions each turn. Each choice comes with different playstyles and strategies, but the idea of this page
+            <p class = "mt-3 mb-0">You must do one of these actions each turn. Each choice comes with different playstyles and strategies, but the idea of this page
               is just to get the basics down and learn how the flow of the game works.</p>
-          </div>
+    </div>
 
         </section>
 
@@ -94,8 +104,9 @@
     <!--The footer is refering the user to the next page via a built in link using the href function-->
     <footer class = "footer" id = "page-footer">
       <p class = "text">Next, you must learn the hands of poker!</p>
-      <p>Click <a class = "button" href = "page2.html">here</a> to see the different hands you could use.</p>
+      <p class = "mb-0">Click <a class = "button btn btn-primary btn-sm" href = "page2.html">here</a> to see the different hands you could use.</p>
     </footer>
-
+   </div>  
   </body> 
 </html>
+
